@@ -1,0 +1,1 @@
+﻿public enum teamDirection { forward, right, backward, left }
