@@ -5,9 +5,9 @@ using UnityEngine;
 public class Board : MonoBehaviour
 {
     [SerializeField]
-    private int sizeX = 2;
+    private int sizeX = 50;
     [SerializeField]
-    private int sizeY = 2;
+    private int sizeY = 50;
     private Tile[,] tileArray;
 
     private void Awake()

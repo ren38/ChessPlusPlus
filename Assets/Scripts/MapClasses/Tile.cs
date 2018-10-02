@@ -17,9 +17,16 @@ public class Tile : MonoBehaviour
 
     private void Start()
     {
+        board = GameObject.FindWithTag("Board").GetComponent<Board>();
+
+        if(board == null)
+        {
+            Debug.Log("WRONG");
+        }
         findPosition();
         registerInBoard();
     }
+   
 
     public Piece getOccupant()
     {
@@ -46,6 +53,12 @@ public class Tile : MonoBehaviour
         xPosition = Mathf.RoundToInt(this.transform.position.x - 0.5f);
         yPosition = Mathf.RoundToInt(this.transform.position.z - 0.5f);
     }
+
+    public float getSize()
+    {
+        return this.GetComponent<Renderer>().bounds.size.x;
+    }
+
 
     private void registerInBoard()
     {
