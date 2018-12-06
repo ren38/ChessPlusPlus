@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RookClass : MonoBehaviour, IRole
 {
+    private static int worth = 2;
     private TeamClass thisTeam;
 
     private void Start()
@@ -50,5 +51,10 @@ public class RookClass : MonoBehaviour, IRole
     public void moveTrigger()
     {
         //Nothing here... for now.
+    }
+
+    public int getWorth()
+    {
+        return worth;
     }
 }

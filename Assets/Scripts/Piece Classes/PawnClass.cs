@@ -6,6 +6,7 @@ public class PawnClass : MonoBehaviour, IRole
 {
     private bool firstTurn = true;
     private TeamClass thisTeam;
+    private static int worth = 1;
 
     public List<Tile> findValidLocations(Board board)
     {
@@ -99,5 +100,10 @@ public class PawnClass : MonoBehaviour, IRole
     public void moveTrigger()
     {
         firstTurn = false;
+    }
+
+    public int getWorth()
+    {
+        return worth;
     }
 }

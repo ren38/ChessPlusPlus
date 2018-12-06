@@ -6,4 +6,5 @@ public interface IRole
 {
     List<Tile> findValidLocations(Board board);
     void moveTrigger();
+    int getWorth();
 }
