@@ -6,7 +6,7 @@ public class PawnClass : MonoBehaviour, IRole
 {
     private bool firstTurn = true;
     private TeamClass thisTeam;
-    
+
     public List<Tile> findValidLocations(Board board)
     {
         if (thisTeam == null)

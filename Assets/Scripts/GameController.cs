@@ -7,9 +7,13 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private List<TeamClass> Teams;
     [SerializeField]
+    private List<EnemyAI> AI;
+    [SerializeField]
     private int turn;
     [SerializeField]
     private int round;
+    [SerializeField]
+    private bool vsAI;
 
     private void Start()
     {
@@ -36,7 +40,14 @@ public class GameController : MonoBehaviour
     {
         if (Teams[turn].getActive() == true)
         {
-            Teams[turn].takeTurn();
+            if(vsAI && turn != 0)
+            {
+                AI[turn - 1].takeTurn();
+            }
+            else
+            {
+                Teams[turn].takeTurn();
+            }
         }
         else
         {

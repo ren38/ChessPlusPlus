@@ -99,6 +99,7 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
+Assets/EnemyAI.cs
 Assets/Scripts/CriticalPiece.cs
 Assets/Scripts/DraggablePiece.cs
 Assets/Scripts/GameController.cs

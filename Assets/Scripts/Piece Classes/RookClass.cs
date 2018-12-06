@@ -34,7 +34,7 @@ public class RookClass : MonoBehaviour, IRole
         Tile next = board.getTile(location.getX() + x, location.getY() + y);
         if (next != null && next.getValid())
         {
-            Debug.Log("Looking at tile x:" + next.getX() + " y:" + next.getY() + ".");
+            //Debug.Log("Looking at tile x:" + next.getX() + " y:" + next.getY() + ".");
             if (next.getOccupant() == null)
             {
                 findDirection(validLocationList, next, board, x, y);

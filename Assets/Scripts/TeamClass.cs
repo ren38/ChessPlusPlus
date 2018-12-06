@@ -15,7 +15,11 @@ public class TeamClass : MonoBehaviour
     private bool control;
     [SerializeField]
     private teamDirection facing;
-    
+
+    public List<Piece> getPieceList()
+    {
+        return pieces;
+    }
 
     public void deregisterPiece(Piece piece)
     {
